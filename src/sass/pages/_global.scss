@@ -1,0 +1,14 @@
+@use '../helpers/variables' as *;
+@use '../helpers/maxins' as *;
+
+:is(*, *::before, *::after) {
+  transition: $transition;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+}
+button {
+  cursor: pointer;
+  background: transparent;
+}

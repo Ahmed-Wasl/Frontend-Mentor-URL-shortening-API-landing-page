@@ -1,0 +1,14 @@
+@use './variables' as *;
+
+@mixin dimension($height, $width) {
+  height: $height;
+  width : $width;
+};
+@mixin border($border-width, $border-style, $border-color, $border-raidus) {
+  border-width: $border-width;
+  border-style: $border-style;
+  border-color: $border-color;
+  border-raidus: $border-raidus;
+};
+
+/// ⬇⬇⬇ take it form github (https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss)
