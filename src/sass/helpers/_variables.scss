@@ -16,6 +16,11 @@ $gray: hsl(0, 0%, 75%);
 $grayish-Violet: hsl(258, 7%, 63%);
 $very-dark-blue: hsl(255, 11%, 22%);
 $very-dark-violet: hsl(260, 8%, 14%);
+// ## background
+$statistics-bg: hsl(230, 25%, 95%);
 
 // transition
 $transition: all .3s ease;
+
+// z-index
+$z-index-nav: 100;

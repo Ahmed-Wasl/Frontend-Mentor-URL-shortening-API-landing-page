@@ -1,14 +1,43 @@
-@use '../helpers/variables' as *;
-@use '../helpers/maxins' as *;
+@use "../helpers/variables" as *;
+@use "../helpers/maxins" as *;
 
 :is(*, *::before, *::after) {
-  transition: $transition;
-  -webkit-transition: $transition;
-  -moz-transition: $transition;
-  -ms-transition: $transition;
-  -o-transition: $transition;
+  @include transition(all 0.3s ease);
+}
+body {
+  font-family: $font-family-poppins, sans-serif;
+}
+h1,
+h2,
+h3 {
+  color: $very-dark-blue;
+}
+p {
+  color: $grayish-Violet;
 }
 button {
   cursor: pointer;
   background: transparent;
+}
+a {
+  color: $grayish-Violet;
+  font-weight: $font-weight-700;
+}
+.container {
+  padding-inline: clamp(1.875rem, 20.37vi + -9.583rem, 8.75rem);
+}
+.btn-cyan {
+  @include border-radius(25px);
+  padding: 10px 25px;
+  margin-top: 20px;
+  font: {
+    size: 20px;
+    weight: $font-weight-500;
+    family: $font-family-poppins;
+  }
+  color: $white-color !important;
+  background-color: $cyan-color;
+}
+.btn-cyan:hover {
+  background-color: hsl(180, 78%, 66%);
 }

@@ -1,14 +1,33 @@
-@use './variables' as *;
+@use "./variables" as *;
 
 @mixin dimension($height, $width) {
   height: $height;
-  width : $width;
-};
+  width: $width;
+}
 @mixin border($border-width, $border-style, $border-color, $border-raidus) {
   border-width: $border-width;
   border-style: $border-style;
   border-color: $border-color;
-  border-raidus: $border-raidus;
-};
-
+}
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+}
+@mixin transform($transform) {
+  transform: $transform;
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+}
+@mixin transition($transition) {
+  transition: $transition;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+}
 /// ⬇⬇⬇ take it form github (https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss)

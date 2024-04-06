@@ -1,0 +1,22 @@
+@use "../helpers/variables" as *;
+@use "../helpers/maxins" as *;
+
+$block: "aside-bottom";
+.#{$block} {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 25vh;
+  padding: 25px 25px;
+  background: url(../../img/bg-boost-desktop.svg);
+  background-color: $dark-violet;
+
+  h2.#{$block}__title {
+    font-size: 40px;
+    color: $white-color;
+  }
+
+  // there's a global style the btn
+}

@@ -1,21 +1,45 @@
 @use "../helpers/variables" as *;
 @use "../helpers/maxins" as *;
 
-$block: 'header';
+@use "../pages/global";
+
+$block: "header";
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 85vh;
-  // height: 60vh;
+  height: 100vh;
+  column-gap: 100px;
+  padding-top: 100px;
+  font-family: $font-family-poppins, sans-serif;
 
   h1.#{$block}__heading {
-    
+    line-height: 1.2;
+    font-size: clamp(2.5rem, 1.515vi + 1.6rem, 3.438rem);
   }
   p.#{$block}__para {
-
+    font-size: $font-size-18;
   }
-  button.#{$block}__btn {
-    
+  // there's a global style the btn
+
+  img.#{$block}__img {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+
+    h1.#{$block}__heading {
+      margin-bottom: 20px;
+    }
+
+    img.#{$block}__img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 }

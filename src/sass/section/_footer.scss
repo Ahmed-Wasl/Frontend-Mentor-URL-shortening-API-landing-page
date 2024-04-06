@@ -1,0 +1,44 @@
+@use '../helpers/variables' as *;
+@use '../helpers/maxins' as *;
+
+$block: 'footer';
+.#{$block} {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-block: 70px;
+  gap: 50px;
+  background: $very-dark-violet;
+
+  .#{$block}__links-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px 100px;
+  }
+
+  h3.#{$block}__links-title {
+    color: $white-color;
+    margin-bottom: 25px;
+  }
+
+  ul.#{$block}__list-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  ul.#{$block}__list-links--social {
+    flex-direction: row;
+    column-gap: 20px;
+  }
+  a.#{$block}__list-item:hover,
+  a.#{$block}__list-item:hover i.fa-brands {
+    color: $cyan-color !important;
+  }
+};
+
+@media (max-width: 355px) {
+  .#{$block}__links-container {
+    justify-content: center;
+    text-align: center;
+  }
+}
