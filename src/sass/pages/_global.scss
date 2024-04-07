@@ -29,7 +29,6 @@ a {
 .btn-cyan {
   @include border-radius(25px);
   padding: 10px 25px;
-  margin-top: 20px;
   font: {
     size: 20px;
     weight: $font-weight-500;

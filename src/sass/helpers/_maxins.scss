@@ -30,4 +30,10 @@
   -ms-transition: $transition;
   -o-transition: $transition;
 }
-/// ⬇⬇⬇ take it form github (https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss)
+
+// media query
+@mixin max-breakpoint($screen-width) {
+  @media screen and (max-width: $screen-width) {
+    @content;
+  }
+};

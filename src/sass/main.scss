@@ -1,13 +1,12 @@
-@use './base/_reset.scss' as *;
+@use "./base/_reset.scss" as *;
 
-@use 'helpers/_variables' as *;
-@use 'helpers/maxins' as *;
+@use "helpers/_variables" as *;
+@use "helpers/maxins" as *;
 
-@use 'pages/global' as *;
+@use "pages/global" as *;
 
-@use 'section/navigation';
-@use 'section/header';
-@use 'section/body';
-@use 'section/aside-bottom';
-@use 'section/footer';
-
+@use "section/navigation";
+@use "section/header";
+@use "section/body";
+@use "section/aside-bottom";
+@use "section/footer";

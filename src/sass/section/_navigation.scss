@@ -2,7 +2,7 @@
 @use "../helpers/maxins" as *;
 
 $block: "nav-container";
-.nav-container {
+.#{$block} {
   position: fixed;
   width: 100%;
   padding-block: 40px;
@@ -58,10 +58,8 @@ $block: "nav-container";
       color: $black-color;
     }
   }
-}
 
-@media (max-width: 800px) {
-  .nav-container {
+  @include max-breakpoint(800px) {
     .#{$block}__links-container {
       position: absolute;
       display: none; // display: none; for btn menu

@@ -34,11 +34,11 @@ $block: 'footer';
   a.#{$block}__list-item:hover i.fa-brands {
     color: $cyan-color !important;
   }
-};
 
-@media (max-width: 355px) {
-  .#{$block}__links-container {
-    justify-content: center;
-    text-align: center;
-  }
-}
+  @include max-breakpoint(355px) {
+    .#{$block}__links-container {
+      justify-content: center;
+      text-align: center;
+    }
+  };
+};

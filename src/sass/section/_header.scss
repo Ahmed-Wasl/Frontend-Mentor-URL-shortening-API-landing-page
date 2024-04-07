@@ -4,13 +4,13 @@
 @use "../pages/global";
 
 $block: "header";
-.header {
+.#{$block} {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   column-gap: 100px;
-  padding-top: 100px;
+  padding-block: 110px;
   font-family: $font-family-poppins, sans-serif;
 
   h1.#{$block}__heading {
@@ -21,14 +21,15 @@ $block: "header";
     font-size: $font-size-18;
   }
   // there's a global style the btn
+  button.#{$block}__btn {
+    margin-top: 20px;
+  }
 
   img.#{$block}__img {
     width: 40vw;
   }
-}
 
-@media (max-width: 800px) {
-  .header {
+  @include max-breakpoint(800px) {
     flex-direction: column-reverse;
     justify-content: center;
     text-align: center;
